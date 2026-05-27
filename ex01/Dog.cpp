@@ -8,10 +8,12 @@ void Dog::makeSound() const
 Dog::Dog()
 {
 	type = "Dog";
+	_brain = new Brain;
 	std::cout << "Constructor Dog called\n";
 }
 
 Dog::~Dog()
 {
+	delete _brain;
 	std::cout << "Deconstructor Dog called\n";
 }

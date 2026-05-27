@@ -8,10 +8,12 @@ void Cat::makeSound() const
 Cat::Cat()
 {
 	type = "Cat";
+	_brain = new Brain;
 	std::cout << "Constructor Cat called\n";
 }
 
 Cat::~Cat()
 {
+	delete _brain;
 	std::cout << "Deconstructor Cat called\n";
 }
