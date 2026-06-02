@@ -6,10 +6,12 @@
 
 class Dog : public Animal {
 private: 
-	Brain* _brain;
+	Brain* _brain; // Pointer so each animal has its own brain not a copy
 public:
 	void makeSound() const override;
 
+	Dog& operator=(const Dog& obj);
+	Dog(const Dog& obj);
 	Dog();
 	~Dog();
 };

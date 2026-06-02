@@ -6,7 +6,9 @@
 class Brain {
 public:
 	std::string ideas[100];
-	
+
+	Brain& operator=(const Brain& obj);
+	Brain(const Brain& obj);
 	Brain();
 	~Brain();
 };

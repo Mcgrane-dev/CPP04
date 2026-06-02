@@ -7,8 +7,8 @@ void WrongCat::makeSound() const
 
 WrongCat::WrongCat()
 {
-	type = "WrongCat";
 	std::cout << "Constructor WrongCat called\n";
+	type = "WrongCat";
 }
 
 WrongCat::~WrongCat()
